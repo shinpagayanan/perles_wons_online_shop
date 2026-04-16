@@ -22,15 +22,15 @@
 .popular-item {
     margin-top: 50px;
     display: flex;
-    flex-wrap: wrap; /* ✅ KEY FIX */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 30px;
 }
 
-/* ================= RESPONSIVE ================= */
-
 @media (max-width: 1024px) {
-    .popular h1 { font-size: 30px; }
+    .popular h1 {
+        font-size: 30px;
+    }
     .popular hr {
         width: 120px;
         height: 3px;
@@ -46,7 +46,6 @@
     .popular hr { width: 100px; }
 }
 
-/* Mobile grid */
 @media (max-width: 500px) {
     .popular-item {
         display: grid;
