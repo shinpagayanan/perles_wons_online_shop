@@ -15,7 +15,7 @@ const [popularProducts, setPopularProducts] = useState([]);
 
   return (
     <div className="popular">
-        <h1>POPULAR IN accessories</h1>
+        <h1>POPULAR IN ACCESSORIES</h1>
         <hr />
         <div className="popular-item">
             {popularProducts.map((item, i)=>{

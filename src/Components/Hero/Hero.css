@@ -103,7 +103,7 @@ display: flex;
         font-size: 16px;
     }
     .hero-right img{
-        width: 300px;
+        width: 270px;
     }
 }
 
@@ -126,7 +126,7 @@ display: flex;
         font-size: 13px;
     }
     .hero-right img{
-        width: 250px;
+        width: 270px;
     }
 }
 @media(max-width:500px){
