@@ -225,7 +225,7 @@
         transform:scale(0.8);
     }
     .brand-tagline{
-        font-size: 13px;
+        font-size: 16px
     }
     .brand-name{
   
@@ -240,9 +240,9 @@
     .nav-login-cart{
         transform: scale(0.8);
     }
-}
-.nav-logo p{
+    .nav-logo p{
     color: #58aff7;
     font-size: 17px;
     font-weight: 600;
+}
 }
