@@ -44,14 +44,12 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center; /* ✅ better for mobile */
+    justify-content: center; 
 }
 
 .offers-right img {
     width: 290px;
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1024px) {
     .offers {
@@ -72,7 +70,7 @@
 
 @media (max-width: 800px) {
     .offers {
-        flex-direction: column; /* ✅ stack */
+        flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
