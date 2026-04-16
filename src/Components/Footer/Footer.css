@@ -6,13 +6,34 @@
     gap: 50px;
 
 }
+.footer-logo-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    align-items: center;
+}
+
+.footer-brand-name{
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-tagline{
+    font-size: 18px;
+    color: #d63384; /* dark pink */
+    font-family: "Brush Script MT", cursive;
+    margin-top: -6px;
+}
 
 .footer-logo {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
+.footer-logo img{
+    width: 150px;
+}
 .footer-logo p{
     color: #383838;
     font-size: 46px;
