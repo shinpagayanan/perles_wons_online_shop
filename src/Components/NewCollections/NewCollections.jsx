@@ -1,9 +1,16 @@
 import React from 'react'
 import './NewCollections.css'
-import new_collection from '../Assets/new_collections'
 import Item from '../Item/Item'
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export const NewCollections = () => {
+  const [new_collection, setNew_collection] = useState([]);
+  useEffect(()=>{
+    fetch('https://perles-wons-backend.onrender.com/newcollections')
+    .then((response)=>response.json())
+    .then((data)=>setNew_collection(data));
+  },[])
   return (
     <div className="new-collections">
         <h1>NEW COLLECTIONS</h1>

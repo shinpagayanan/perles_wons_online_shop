@@ -21,19 +21,25 @@ export const Navbar = () => {
   return (
     <div className="navbar">
         <div className="nav-logo">
-            <img src={logo} alt="" />
-            <p>PERLES WONS</p>
+            <img src={logo} className='nav-logo-img'alt="" />
+             <div className="nav-logo-text">
+        <p className="brand-name">PERLES WONS</p>
+        <span className="brand-tagline">handmade accessories</span>
+    </div>
         </div>
         <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
         <ul ref={menuRef} className="nav-menu">
             <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration: 'none'}} to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("mens")}}><Link style={{textDecoration: 'none'}}to='/mens'>Mens</Link>{menu==="mens"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("womens")}}><Link style={{textDecoration: 'none'}}to='/womens'>Women</Link>{menu==="womens"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("kids")}}><Link style={{textDecoration: 'none'}}to='/kids'>Kids</Link>{menu==="kids"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("bracelets")}}><Link style={{textDecoration: 'none'}}to='/bracelets'>Bracelets</Link>{menu==="bracelets"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("accessories")}}><Link style={{textDecoration: 'none'}}to='/accessories'>Accessories</Link>{menu==="accessories"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("more")}}><Link style={{textDecoration: 'none'}}to='/more'>More</Link>{menu==="more"?<hr/>:<></>}</li>
         </ul>
         <div className="nav-login-cart">
-            <Link to='/login'><button>Login</button></Link>
-            <Link to='/cart'><img src={cart_icon} alt="" /></Link>
+            {localStorage.getItem('auth-token')
+            ?<button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}>Logout</button>
+            :<Link to='/login'><button>Login</button></Link>
+           }
+             <Link to='/cart'><img src={cart_icon} alt="" /></Link>
             <div className="nav-cart-count">{getTotalCartItems()}
 
             </div>
