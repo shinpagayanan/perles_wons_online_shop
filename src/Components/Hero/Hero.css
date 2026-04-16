@@ -34,6 +34,9 @@ display: flex;
 .hero-hand-icon img{
     width: 105px;
 }
+.hero-right img{
+        width: 450px;
+    }
 
 .hero-latest-btn{
     display:flex;
@@ -78,7 +81,7 @@ display: flex;
         font-size: 18px;
     }
     .hero-right img{
-        width: 500px;
+        width: 350px;
     }
 }
 @media(max-width:1024px){
@@ -100,7 +103,7 @@ display: flex;
         font-size: 16px;
     }
     .hero-right img{
-        width: 400px;
+        width: 300px;
     }
 }
 
@@ -123,7 +126,7 @@ display: flex;
         font-size: 13px;
     }
     .hero-right img{
-        width: 300px;
+        width: 250px;
     }
 }
 @media(max-width:500px){
@@ -145,7 +148,7 @@ display: flex;
     .hero-latest-btn{
         height: 45px;
         width: 200px;
-        font-size: 1p4x;
+        font-size: 16px;
     }
 
 }
