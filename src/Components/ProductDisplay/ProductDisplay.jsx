@@ -41,18 +41,18 @@ const ProductDisplay = (props) => {
                 A lightweight shirt
             </div>
             <div className="productdisplay-right-size">
-                <h1>Select Size</h1>
+                <h1>Select Variant</h1>
                 <div className="productdisplay-right-sizes">
-                    <div>S</div>
-                    <div>M</div>
-                    <div>L</div>
-                    <div>XL</div>
-                    <div>XXL</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
                 </div>
             </div>
             <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-            <p className="productdisplay-right-category"><span>Category: </span>accessories, Tshirt, Crop Top</p>
-             <p className="productdisplay-right-category"><span>Category: </span>accessories, Tshirt, Crop Top</p>
+            <p className="productdisplay-right-category"><span>Category: </span>Accessories, Affordable, Ph</p>
+             <p className="productdisplay-right-category"><span>Tags: </span>Wearable, Accessory</p>
 
         </div>
     </div>
