@@ -82,9 +82,9 @@
 }
 
 @media (max-width: 500px) {
-    .offers-left h1 { font-size: 16px; }
+    .offers-left h1 { font-size: 20px; }
     .offers-left p { font-size: 10px; }
-    .offers-right img { width: 130px; }
+    .offers-right img { height: 300; width: 150px; }
 
     .offers-left button {
         width: 120px;
